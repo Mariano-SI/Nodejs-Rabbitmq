@@ -8,11 +8,11 @@ const send = async () => {
   const channel: Channel = await connection.createChannel();
 
   // Definindo o nome da fila que iremos enviar os dados
-  var queue = 'hello';
+  const queue = 'hello';
 
   // Recebendo mensagens através de parâmetros ou um 'Hello World' 
   // caso não existam
-  var msg = process.argv[2] ?? 'Hello World';
+  const msg = process.argv[2] ?? 'Hello World';
 
   // assertQueue verifica existe. Se a fila ainda não existir, ela será 
   // criada com base nas opções fornecidas. Caso já exista, a função 
